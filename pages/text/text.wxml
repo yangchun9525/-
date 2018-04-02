@@ -1,0 +1,16 @@
+<view>
+  <view style="text-align: center;">
+    <image wx:if="{{refreshShow}}" style="width: 30%; height: 50px;background-color: #555555;" src="../../images/loading.gif"></image>
+  </view>
+
+  <scroll-view style="height:570px" scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <view style="width: 100%; " wx:key="index" wx:for="{{contentlist}}" wx:for-item="itemcontent" wx:for-index="index">
+      <view style="word-break: break-all;">{{itemcontent.text}}</view>
+       <image style="width: 100%; height: 3px;" src="../../images/divide_line.png"></image>
+    </view>
+  </scroll-view>
+
+  <view style="text-align: center;">
+    <image wx:if="{{loadMoreShow}}" style="width: 30%; height: 50px;background-color: #555555;" src="../../images/loading.gif"></image>
+  </view>
+</view>

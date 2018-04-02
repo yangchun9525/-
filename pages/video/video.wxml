@@ -1,0 +1,19 @@
+<view>
+  <view style="text-align: center;">
+    <image wx:if="{{refreshShow}}" style="width: 30%; height: 50px;background-color: #555555;" src="../../images/loading.gif"></image>
+  </view>
+  <button bindtap='pauseVideo'>button</button>
+<!-- http://mvideo.spriteapp.cn/video/2018/0329/f7cea6be-3357-11e8-ae4f-1866daeb0df1_wpc.mp4 -->
+    <video style="width: 100%; margig:10px auto;" show-fullscreen-btn="true" controls bindplay="play" bindpause='pause' src="http://mvideo.spriteapp.cn/video/2018/0329/f7cea6be-3357-11e8-ae4f-1866daeb0df1_wpc.mp4"></video>   
+   <!-- <scroll-view style="height:570px" scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll"> -->
+     <!-- <view style="width: 100%; " wx:key="index" wx:for="{{contentlist}}" wx:for-item="itemcontent" wx:for-index="index">
+      <view style="word-break: break-all;">{{index}}:{{itemcontent.text}}</view>
+      <video style="width: 100%; margig:10px auto;"  bindplay="play" show-fullscreen-btn="true" src="{{itemcontent.video_uri}}"></video>
+      <image style="width: 100%; height: 3px;" src="../../images/divide_line.png"></image>
+    </view>  -->
+  <!-- </scroll-view>  -->
+
+  <view style="text-align: center;">
+    <image wx:if="{{loadMoreShow}}" style="width: 30%; height: 50px;background-color: #555555;" src="../../images/loading.gif"></image>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+
+.bc_green{
+  background: green;
+  height: 150px;
+}
+.bc_red{
+  background: red;
+  height: 150px;
+}
+.bc_yellow{
+  background: yellow;
+  height: 150px;
+}
+.bc_blue{
+  background: blue;
+  height: 150px;
+}
